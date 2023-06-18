@@ -77,7 +77,7 @@ while counter1 != (lista1):
             time.sleep(1)
             driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[2]/div[1]/div[4]/form/div/div/div[2]/div/div/div[2]/div/div[2]/div[2]/input[2]').click()
             time.sleep(7)
-            driver.get('https://domidekoracje.pl/wp-admin/upload.php?mode=list&attachment-filter=post_mime_type%3Aimage&m=0&seo-filter=all&filter_action=Przefiltruj&s&action=-1&paged='+str(counter1)+'&action2=-1&affected&_ajax_nonce=0b0bd487ed&ps')
+            driver.get('STRONA ZE ZBIOREM ZDJĘĆ - wyświetlane w liscie po 200 elementów z numerem strony &paged='+str(counter1)+'&action2=-1&affected&_ajax_nonce=0b0bd487ed&ps')
             time.sleep(7)
             counter += 1
         except NoSuchElementException:
